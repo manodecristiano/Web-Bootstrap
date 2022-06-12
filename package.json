@@ -1,0 +1,26 @@
+{
+  "name": "web-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "purge": "purgecss --css sass/custom.css --content index.html -o sass/reducido.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manodecristiano/Web-Bootstrap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manodecristiano/Web-Bootstrap/issues"
+  },
+  "homepage": "https://github.com/manodecristiano/Web-Bootstrap#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1"
+  }
+}
