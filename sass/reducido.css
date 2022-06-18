@@ -421,10 +421,6 @@ img {
   border-color: rgba(var(--bs-secondary-rgb), var(--bs-border-opacity)) !important;
 }
 
-.border-3 {
-  --bs-border-width: 3px;
-}
-
 .justify-content-center {
   -webkit-box-pack: center !important;
       -ms-flex-pack: center !important;
@@ -435,6 +431,10 @@ img {
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
           align-items: center !important;
+}
+
+.m-0 {
+  margin: 0 !important;
 }
 
 /* rtl:begin:remove */
