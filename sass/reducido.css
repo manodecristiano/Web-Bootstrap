@@ -412,6 +412,19 @@ img {
   display: flex !important;
 }
 
+.border {
+  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}
+
+.border-secondary {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-secondary-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-3 {
+  --bs-border-width: 3px;
+}
+
 .justify-content-center {
   -webkit-box-pack: center !important;
       -ms-flex-pack: center !important;
@@ -456,5 +469,9 @@ img {
 .bg-danger {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
 }
 /*# sourceMappingURL=custom.css.map */
