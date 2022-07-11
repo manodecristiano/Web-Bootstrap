@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
 
+    <link rel="stylesheet" href="./sass/custom.css">
 
-<link rel="stylesheet" href="./sass/custom.css">
-
-<style>
-    @media (min-width: 992px) {
-        .alto-100 {
-            height: 100vh;
+    <style>
+        @media (min-width: 992px) {
+            .alto-100 {
+                height: 100vh;
+            }
         }
-    }
-</style>
+    </style>
+    <script src="./docs/assets/js/app.js"></script>
+
 </head>
 
 <body>
@@ -40,41 +42,30 @@
                             </div>
 
 
-                            <!-- Toast y Button-->
-                            <button type="button" class="btn btn-primary" id="liveToastBtn">Show live
-                                toast</button>
-                            <div class="toast-container position-fixed bottom-0 end-0 p-3">
-                                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                                    <div class="toast-header">
-                                        <img src="..." class="rounded me-2" alt="...">
-                                        <strong class="me-auto">Bootstrap</strong>
-                                        <small>11 mins ago</small>
-                                        <button type="button" class="btn-close" data-bs-dismiss="toast"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="toast-body">
-                                        Hello, world! This is a toast message.
-                                    </div>
-                                </div>
-                            </div>
+
+
+
+
 
 
                         </article>
+                        <div class="text-center mt-3">
+                            <div class="spinner-border text-danger" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-12 col-lg-4 bg-success p-3  position-relative ">
+                    <div class="col-12 col-lg-4 bg-success p-3  position-relative  ">
                         <img src="docs/assets/img/perfil.jpg"
                             class=" position-absolute top-50 start-50 translate-middle p-3 mb-2 border  border-light  rounded-circle"
                             width="100">
                         <p class="m-1"> 2Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quia
-                            sequi
-                            vel
-                            numquam,
-                            temporibus
                             laboriosam, blanditiis deleniti quos pariatur omnis porro quaerat vero ipsam ducimus, atque
                             explicabo? Perferendis, odit ex.
                         </p>
                     </div>
+
                     <div class="col-12 col-lg-4 bg-danger ">
                         <img src="docs/assets/img/perfil.jpg" class=" p-1 shadow-lg  rounded-circle" width="55">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quia sequi vel numquam,
@@ -84,14 +75,16 @@
                         </p>
                     </div>
                     <div class="col-12 col-lg-8 bg-warning p-3">
-                        <img src="docs/assets/img/perfil.jpg" class=" px-2 shadow-lg border border-dark  rounded-circle"
-                            width="55">
+                        <img src="docs/assets/img/perfil.jpg"
+                            class="opacity-25 px-2 shadow-lg border border-dark  rounded-circle" width="55">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quia sequi vel numquam,
-                            temporibus
+                            temporibus <a href="#" data-bs-toggle="tooltip" title="Default tooltip">inline links</a>
                             laboriosam, blanditiis deleniti quos pariatur omnis porro quaerat vero ipsam ducimus, atque
-                            explicabo? Perferendis, odit ex.
+                            explicabo? <a href="#" data-bs-toggle="tooltip" title="Another tooltip">help</a>
+                            Perferendis, odit ex.
                         </p>
                     </div>
+
                 </div>
             </div>
             <!-- columna derecha-->
@@ -105,12 +98,33 @@
 
                 </p>
 
+                <button type="button" class="btn btn-primary mt-3 position-relative start-50 translate-middle "> Mails
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">+99
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
             </div>
 
         </div>
     </div>
+    <!-- Toast y Button-->
+    <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
 
 </body>
-<script src="./docs/assets/js/app.js"></script>
+
 
 </html>
